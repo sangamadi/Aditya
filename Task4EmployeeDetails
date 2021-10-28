@@ -1,0 +1,122 @@
+//Creating Employee class  
+class EmployeeDetails {  
+    //Creating properties of Employee class  
+int emp_id, salary;  
+String  address, department, project;  
+  
+//Getter and setters for getting and setting properties  
+public int getEmp_id() {  
+    return emp_id;  
+}  
+public void setEmp_id(int emp_id)
+{  
+    this.emp_id = emp_id;  
+}  
+public int getSalary()
+{  
+    return salary;  
+}  
+public void setSalary(int salary) 
+{  
+    this.salary = salary;  
+}  
+public String getAddress() 
+{  
+    return address;  
+}  
+public void setAddress(String address) 
+{  
+    this.address = address;  
+}  
+public String getDepartment() {  
+    return department;  
+}  
+public void setDepartment(String department)
+{  
+    this.department = department;  
+}  
+public String getProject()
+{  
+    return project;  
+}  
+public void setProject(String project)
+{  
+    this.project= project;  
+}  
+  
+//Overriding toString() method  
+@Override  
+public String toString() {  
+    return " [emp_id = " + emp_id + ", salary = " + salary + ", address = " + address  
+            + ", department = " + department + ", project = " + project+ "]";  
+    }
+      
+}  
+public class Employee 
+{
+	 public static void main(String args[]) {  
+         
+	        //Creating object of EmployeeDetails class  
+	        EmployeeDetails aditya = new EmployeeDetails();  
+	        EmployeeDetails pankaj = new EmployeeDetails(); 
+	        EmployeeDetails chirag = new EmployeeDetails(); 
+	        EmployeeDetails akansha = new EmployeeDetails(); 
+	        //Setting values to the properties  
+	        aditya.setEmp_id(101);  
+	        aditya.setDepartment("IT");  
+	        aditya.setSalary(15000);  
+	        aditya.setAddress("New Delhi");  
+	        aditya.setProject("RBS");  
+	        
+	        pankaj.setEmp_id(102);  
+	        pankaj.setDepartment("CS");  
+	        pankaj.setSalary(16000);  
+	        pankaj.setAddress("Gurgaon");  
+	        pankaj.setProject("NATWEST");  
+	        
+	        chirag.setEmp_id(103);  
+	        chirag.setDepartment("EC");  
+	        chirag.setSalary(17000);  
+	        chirag.setAddress("Noida");  
+	        chirag.setProject("RBS");  
+	        
+	        akansha.setEmp_id(104);  
+	        akansha.setDepartment("EE");  
+	        akansha.setSalary(18000);  
+	        akansha.setAddress("Agra");  
+	        akansha.setProject("NATWEST");  
+	         
+	        //Showing Employee details  
+	        System.out.println(aditya);
+	        System.out.println(pankaj);
+	        System.out.println(chirag);
+	        System.out.println(akansha);
+	          
+	        //Getting salary using getter  
+	       /* int sal = emp.getSalary();  
+	        int increment = 0;  
+	        //Incrementing salary based on condition  
+	        if ((sal >=1000) && (sal <=1500))  
+	        {  
+	            //incrementing salary 2%  
+	            increment += (sal * 2)/100;  
+	            sal = sal+increment;  
+	              
+	            emp.setSalary(sal);  
+	            System.out.println("\n Salary is incremented \n");  
+	            System.out.println(emp);  
+	              
+	        }else if ((sal >=1500) && (sal <=20000)){  
+	            //incrementing salary 5%  
+	            increment += (sal * 5)/100;  
+	            sal = sal+increment;  
+	              
+	            emp.setSalary(sal);  
+	            System.out.println("\n Salary is incremented \n");  
+	            System.out.println(emp);  
+	        }else {  
+	            System.out.println("\n Salary is not incremented \n");  
+	            System.out.println(emp);  
+	        }  */       
+	    }  
+	}  
