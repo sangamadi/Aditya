@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+class Employee
+{
+	int id;
+	float sal;
+	String name, address,project;
+}
+public class EmployeeDemo {
+	public static void main(String args[])
+	{ 
+		  Scanner sc = new Scanner(System.in);
+		System.out.println("How many employee's Details");
+		int n = sc.nextInt();
+		Employee emp[]=new Employee[n];
+		for(int i=0;i<n;i++)
+		{
+			emp[i]=new Employee();
+			System.out.println("Enter" +(i+1)+ "Employee Details");
+			System.out.println("Enter Employee Id-:");
+			emp[i].id=sc.nextInt();
+			System.out.println("Enter Employee Sal-:");
+			emp[i].sal=sc.nextFloat();
+			System.out.println("Enter Employee Name-:");
+			emp[i].name=sc.next();
+			System.out.println("Enter Employee Address-:");
+			emp[i].address=sc.next();
+			System.out.println("Enter Employee Project-:");
+			emp[i].project=sc.next();
+			}
+		System.out.println("Following are employee's Details");
+		for(int i=0;i<n;i++)
+		{
+			System.out.println("Employee id-"+emp[i].id+  "Employee Sal-"+emp[i].sal+  "Employee Name-"+emp[i].name+  "Employee Address-"+emp[i].address+  "Employee Project-"+emp[i].project);
+			}
+		
+		
+	}
+
+}
