@@ -1,0 +1,42 @@
+class student
+{
+private int roll;
+private int std;
+private String name;
+public int getRoll() {
+	return roll;
+}
+public void setRoll(int roll) {
+	this.roll = roll;
+}
+public int getStd() {
+	return std;
+}
+public void setStd(int std) {
+	this.std = std;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+
+
+}
+
+public class encapsulation {
+	public static void main(String args[])
+	{
+		student s1=new student();
+		//s1.roll=3;
+		s1.setRoll(3);
+		//s1.std=6;
+		s1.setStd(6);
+		//s1.name="aditya";
+		s1.setName("aditya"); // Here value can be set by methods only due to encapsulation
+		System.out.println(s1.getRoll());
+		System.out.println(s1.getStd());
+		System.out.println(s1.getName());
+	}
+}
