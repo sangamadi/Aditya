@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class PalindromExp2 {
+
+	public static void main(String args[])
+	{
+		int i;
+		String text,rev="";
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter String to check");
+		text= sc.nextLine();
+		for(i=text.length()-1;i>=0;i--)
+		{
+			rev = rev+text.charAt(i);
+		}
+		if(text.equals(rev))
+		
+			System.out.println("it is a palindrome");  
+		
+		else 
+			System.out.println("it is not a palindrome");  
+	}
+}
