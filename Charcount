@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class stringLen {
+public static void main(String argsp[])
+{ int l;
+	/*Scanner sc= new Scanner(System.in);
+	System.out.println("Enter string");
+	String text=sc.nextLine();
+	l= text.length();
+	System.out.println("Length of string is"+" "+l);*/
+// Count the number of characters in string
+			CharacterCount t= new CharacterCount();
+			int p=t.charcount("This is Java code");
+			System.out.println("Total no of character is"+" "+p);
+			
+			
+	}
+}
+class CharacterCount
+{
+int count=0;
+String text;
+public int charcount(String text)
+{
+	int i;
+	for(i=0;i<text.length();i++)
+	{
+		if(text.charAt(i)!=' ')
+		{
+			count=count+1;
+		}
+	}
+	return count;
+	//System.out.println("Total no of character is"+count);
+}
+}
