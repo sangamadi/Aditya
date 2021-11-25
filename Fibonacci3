@@ -1,0 +1,29 @@
+class Fibo
+{
+	int i;
+	int a[]=new int[50];
+	
+	public void Fibonacci(int n1,int n2,int t)
+	{
+		System.out.print(n1+" "+n2+" ");
+	for(i=2;i<=t;i++)
+	{
+		a[0]=n1;
+		a[1]=n2;
+		a[i]=a[i-1]+a[i-2];
+		
+	      System.out.print(a[i]+" ");	
+	}
+	
+	
+	}
+}
+public class FibonacciExp3 {
+	public static void main(String argsp[])
+	{
+		Fibo f= new Fibo();
+		f.Fibonacci(2, 3, 12);
+		
+	}
+
+}
